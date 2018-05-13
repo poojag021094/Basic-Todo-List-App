@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Todo List App</title>
+  </head>
+  <body>
+    <h1>Basic Todo List</h1>
+    <form id="myForm" action="index.html" method="post">
+      <input type="text" name="" value="" id="input" placeholder="Enter your activity..."><br><br>
+      <button type="button" name="button" onclick="todolist()">Click Me!</button>
+    </form>
+    <ol id="myitems">
+
+    </ol>
+    <script type="text/javascript">
+    function todolist(){
+      var item = document.getElementById('input').value;
+      var text = document.createTextNode(item);
+      var newItem = document.createElement("li");
+      newItem.appendChild(text);
+      document.getElementById('myitems').appendChild(newItem);
+    }
+    </script>
+  </body>
+</html>
