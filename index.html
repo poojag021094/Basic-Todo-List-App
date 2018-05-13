@@ -4,8 +4,18 @@
   <head>
     <meta charset="utf-8">
     <title>Basic Todo List App</title>
+    <style media="screen">
+      .container{
+        width: 500px;
+        height: 500px;
+        margin-left: 450px;
+        text-align: center;
+
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
     <h1>Basic Todo List</h1>
     <form id="myForm" action="index.html" method="post">
       <input type="text" name="" value="" id="input" placeholder="Enter your activity..."><br><br>
@@ -14,6 +24,7 @@
     <ol id="myitems">
 
     </ol>
+   </div>
     <script type="text/javascript">
     function todolist(){
       var item = document.getElementById('input').value;
